@@ -32,10 +32,12 @@ console.log(`km: ${km}  age: ${age}`);
 // verifico l'età per lo sconto
 if (age < 18) {
     discount = ticket_cost * 0.2;
+    discount.toFixed(2);
     discount_msg = "20%";
 } else if (age > 65) {
     discount = ticket_cost * 0.4;
     discount_msg = "40%";
+    discount.toFixed(2);
 } else if (age >= 18 && age < 65) {
     discount = 0;
     discount_msg = "0%";
