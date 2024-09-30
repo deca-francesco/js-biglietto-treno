@@ -36,7 +36,7 @@ if (age < 18) {
 } else if (age > 65) {
     discount = ticket_cost * 0.4;
     discount_msg = "40%";
-} else if (age > 18 && age < 65) {
+} else if (age >= 18 && age < 65) {
     discount = 0;
     discount_msg = "0%";
 }
