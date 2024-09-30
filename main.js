@@ -49,7 +49,9 @@ final_price = ticket_cost - discount;
 final_price.toFixed(2);
 
 // 4) Mostrare output
+// controllo in console
 console.log(`Biglietto: ${ticket_cost}€  Sconto: ${discount_msg}  Prezzo Finale: ${final_price}`);
+// faccio vedere anche all'utente
 alert(`Il tuo biglietto costa: ${ticket_cost}€.
 Hai diritto ad uno sconto del: ${discount_msg}.
 Il costo finale del tuo biglietto è di: ${final_price}€`);
