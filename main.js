@@ -19,8 +19,8 @@ let final_price;
 km = prompt("Inserisci il numero di kilometri del tuo viaggio");
 age = prompt("Inserisci la tua età");
 // Faccio tornare i valori ottenuti da stinga a numeri interi
-parseInt(km);
-parseInt(age);
+km = parseInt(km);
+age = parseInt(age);
 // assegno il valore ottenuto alla variabile
 ticket_cost = km * cost_per_km;
 // rendo il prezzo un numero con massimo 2 decimali
