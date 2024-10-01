@@ -6,6 +6,17 @@ console.log("js is linked");
 //          40% over 65
 // Output
 
+// 0) Strumenti conosciuti
+/*
+- let, const
+- prompt
+- console.log
+- operatori aritmetici, di comparazione e logici
+- stringhe
+- numeri
+- condizionali if/else if/else
+*/
+
 // 1) Preparazione e dichiarazione variabili
 let km;
 let age;
@@ -16,7 +27,7 @@ let ticket_cost;
 let final_price;
 
 // 2) Raccolta dati attraverso prompt
-km = prompt("Inserisci il numero di kilometri del tuo viaggio");
+km = prompt("Inserisci il numero di kilometri del tuo viaggio");    // si può fare anche così : km = parseInt(prompt("kilometri"));
 age = prompt("Inserisci la tua età");
 // Faccio tornare i valori ottenuti da stinga a numeri interi
 km = parseInt(km);
@@ -38,7 +49,7 @@ if (age < 18) {
     discount = ticket_cost * 0.4;
     discount = discount.toFixed(2);
     discount_msg = "40%";
-} else if (age >= 18 && age < 65) {
+} else if (age >= 18 && age <= 65) {
     discount = 0;
     discount_msg = "0%";
 }
